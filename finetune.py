@@ -69,7 +69,7 @@ model = GPTJForCausalLM.from_pretrained(
 )
 total_params,params=0,0
 
-tokenizer = GPTJTokenizer.from_pretrained("EleutherAI/gpt-j-6B",, add_eos_token=True)
+tokenizer = GPTJTokenizer.from_pretrained("EleutherAI/gpt-j-6B", add_eos_token=True)
 
 
 
