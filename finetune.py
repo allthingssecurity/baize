@@ -63,7 +63,7 @@ if ddp:
 
 
 model = GPTJForCausalLM.from_pretrained(
-    model_name,
+    "EleutherAI/gpt-j-6B",
     load_in_8bit=True,
     device_map=device_map,
 )
