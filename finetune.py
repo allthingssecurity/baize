@@ -9,7 +9,7 @@ import torch.nn as nn
 import bitsandbytes as bnb
 from datasets import load_dataset
 import transformers
-from transformers import GPTJForCausalLM, GPTJTokenizer
+from transformers import GPTJForCausalLM, GPT2Tokenizer
 from peft import (
     prepare_model_for_int8_training,
     LoraConfig,
@@ -69,7 +69,7 @@ model = GPTJForCausalLM.from_pretrained(
 )
 total_params,params=0,0
 
-tokenizer = GPTJTokenizer.from_pretrained("EleutherAI/gpt-j-6B", add_eos_token=True)
+tokenizer = GPT2Tokenizer.from_pretrained("EleutherAI/gpt-j-6B", add_eos_token=True)
 
 
 
